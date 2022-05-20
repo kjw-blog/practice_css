@@ -6,11 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'InkLipquid', 'sans-serif';
+  font-family: 'Oswald', 'InkLipquid', 'sans-serif';
 }
 
 @font-face {
   font-family: 'InkLipquid';
   font-weight: 400;
   src: url('/fonts/InkLipquidFonts.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-weight: 400;
+  src: url('/fonts/Oswald-Medium.ttf') format('truetype');
 }

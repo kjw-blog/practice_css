@@ -11,4 +11,8 @@ export const menus = [
     path: '/loading',
     kor: '로딩바',
   },
+  {
+    path: '/menu_3d',
+    kor: '3D 메뉴',
+  },
 ];

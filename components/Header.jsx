@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { menus } from '../utils/menu';
 import Option from './select_box/Option';
+import Seo from './Seo';
 
 export default function Header() {
   const [page, setPage] = useState('홈');
@@ -23,16 +24,17 @@ export default function Header() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full fixed h-20 bg-black top-0">
-      <div className="w-[300px]  cursor-pointer relative">
+    <div className="fixed top-0 flex h-20 w-full items-center justify-center bg-black">
+      <Seo title={page} />
+      <div className="relative  w-[300px] cursor-pointer">
         <div
           onClick={() => setToggle((prev) => !prev)}
-          className="w-full flex items-center p-2 justify-between bg-white font-bold"
+          className="flex w-full items-center justify-between bg-white p-2 font-bold"
         >
           <span className="text-[20px]">{page}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={classNames('transition h-5 w-5', toggle && 'rotate-180')}
+            className={classNames('h-5 w-5 transition', toggle && 'rotate-180')}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -47,7 +49,7 @@ export default function Header() {
         </div>
         <div
           className={classNames(
-            'options-list overflow-y-auto scrollbar-thin scrollbar-thumb-scroll-200 scrollbar-track-scroll-100 duration-500 ease-custom bg-[#f9f9f9] w-[300px] mt-[14px] rounded-[6px] px-[20px] absolute max-h-[180px]',
+            'options-list absolute mt-[14px] max-h-[180px] w-[300px] overflow-y-auto rounded-[6px] bg-[#f9f9f9] px-[20px] duration-500 ease-custom scrollbar-thin scrollbar-track-scroll-100 scrollbar-thumb-scroll-200',
             toggle ? 'h-[180px]' : 'h-0'
           )}
         >
