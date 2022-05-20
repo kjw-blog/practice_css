@@ -1,20 +1,20 @@
 import classNames from 'classnames';
 
-export default function Option({ language, lang, setLang, select }) {
+export default function Option({ value, now, setValue, select }) {
   const onClick = () => {
-    setLang(language);
-    select();
+    setValue(value);
+    select(value);
   };
 
   return (
     <div
       className={classNames(
-        'py-[8px] text-[14px] duration-300 ease-custom2 hover:text-[#00a8ff]',
-        lang === language && 'text-[#00a8ff]'
+        'py-[8px] text-[18px] duration-300 font-bold ease-custom2 hover:text-[#00a8ff]',
+        now === value && 'text-[#00a8ff]'
       )}
       onClick={onClick}
     >
-      {language}
+      {value}
     </div>
   );
 }
