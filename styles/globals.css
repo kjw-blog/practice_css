@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', 'InkLipquid', 'sans-serif';
+  font-family: 'Oswald', 'Jua', 'sans-serif';
 }
 
 @font-face {
@@ -18,4 +18,9 @@
   font-family: 'Oswald';
   font-weight: 400;
   src: url('/fonts/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Jua';
+  font-weight: 400;
+  src: url('/fonts/Jua-Regular.ttf') format('truetype');
 }

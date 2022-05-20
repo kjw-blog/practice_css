@@ -6,7 +6,7 @@ export default function Select() {
   return (
     <>
       <div className="flex h-screen w-full items-center justify-center bg-[#434750]">
-        <ul className="relative -skew-y-[15deg]">
+        <ul className="relative -skew-y-[15deg] select-none">
           <Option3D text="Home" zi={6} />
           <Option3D text="About" zi={5} />
           <Option3D text="Services" zi={4} />

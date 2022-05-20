@@ -15,4 +15,12 @@ export const menus = [
     path: '/menu_3d',
     kor: '3D 메뉴',
   },
+  {
+    path: '/animate_popup',
+    kor: '애니메이션 팝업',
+  },
+  {
+    path: '/light_button',
+    kor: '네온사인 버튼',
+  },
 ];
