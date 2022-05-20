@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed top-0 flex h-20 w-full items-center justify-center bg-black">
+    <div className="fixed top-0 z-50 flex h-20 w-full items-center justify-center bg-black">
       <Seo title={page} />
       <div className="relative  w-[300px] cursor-pointer">
         <div

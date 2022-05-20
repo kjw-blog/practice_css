@@ -6,6 +6,8 @@ export default function Button() {
       <Btn color="blue" />
       <Btn color="green" />
       <Btn color="pink" />
+      <Btn color="yellow" />
+      <Btn color="purple" />
     </div>
   );
 }

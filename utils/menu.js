@@ -23,4 +23,8 @@ export const menus = [
     path: '/light_button',
     kor: '네온사인 버튼',
   },
+  {
+    path: '/snow_cloud',
+    kor: '눈 구름',
+  },
 ];
