@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .button-before {
+    @apply before:absolute before:top-0 before:left-[80%] before:h-[4px]  before:w-[10px] before:-translate-x-[50%] before:skew-x-[325deg] before:bg-[#27282c] before:duration-500 before:content-[''] group-hover:before:left-[20%] group-hover:before:w-[20px];
+  }
+  .button-after {
+    @apply after:absolute after:bottom-0 after:right-[80%] after:h-[4px] after:w-[10px]  after:-translate-x-[50%] after:skew-x-[325deg] after:bg-[#27282c] after:duration-500 after:content-[''] group-hover:after:right-[10%] group-hover:after:w-[20px];
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +18,6 @@
   font-family: 'Oswald', 'Jua', 'sans-serif';
 }
 
-@font-face {
-  font-family: 'InkLipquid';
-  font-weight: 400;
-  src: url('/fonts/InkLipquidFonts.ttf') format('truetype');
-}
 @font-face {
   font-family: 'Oswald';
   font-weight: 400;
