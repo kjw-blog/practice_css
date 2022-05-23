@@ -27,4 +27,8 @@ export const menus = [
     path: '/snow_cloud',
     kor: '눈 구름',
   },
+  {
+    path: '/animate_menu',
+    kor: '애니메이션 메뉴 ',
+  },
 ];

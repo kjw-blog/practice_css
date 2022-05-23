@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-export default function Btn({ color }) {
+export default function Btn({ text, color }) {
   const colors = {
     blue: 'hover:bg-[#1e9bff] hover:shadow-[0_0_35px_var(#1e9bff)] hover:shadow-[#1e9bff] hover:text-[#1e9bff]',
     green:
@@ -16,11 +16,11 @@ export default function Btn({ color }) {
     <a
       href="#"
       className={classNames(
-        'group relative rounded-md bg-[#fff] p-[10px_30px] text-[1.5em] uppercase tracking-widest text-[#fff] duration-500 after:absolute after:inset-[2px] after:rounded-md after:bg-[#27282c] after:content-[""] hover:tracking-[0.25em] ',
+        'group relative min-w-[150px]  rounded-md bg-[#fff] p-[10px_30px] text-center text-[1.5em] uppercase tracking-widest text-[#fff] duration-500 after:absolute after:inset-[2px] after:rounded-md after:bg-[#27282c] after:content-[""] hover:tracking-[0.25em] ',
         colors[color]
       )}
     >
-      <span className="relative z-[1]">Button</span>
+      <span className="relative z-[1]">{text}</span>
       <i className="button-before button-after absolute inset-0 block"></i>
     </a>
   );

@@ -12,6 +12,18 @@
   .cloud_before {
     @apply before:absolute  before:-top-[50px]  before:left-[40px] before:h-[110px] before:w-[110px] before:rounded-full before:bg-[#fff] before:shadow-[90px_0_0_30px_#fff]  before:content-[''];
   }
+  .am_list_before {
+    @apply before:absolute before:top-[10px] before:left-0 before:h-full before:w-full before:rounded-full before:opacity-0 before:blur-[5px] before:delay-[0] before:duration-500 before:content-[''];
+  }
+  .am_list_active_before {
+    @apply before:opacity-50 before:delay-[250ms];
+  }
+  .am_indicator_b {
+    @apply before:absolute before:top-[5px] before:-left-[28px] before:h-[30px] before:w-[30px] before:rounded-full before:bg-transparent before:shadow-[15px_18px_#fff] before:content-[''];
+  }
+  .am_indicator_a {
+    @apply after:absolute after:top-[5px] after:-right-[28px] after:h-[30px] after:w-[30px] after:rounded-full after:bg-transparent after:shadow-[-15px_18px_#fff] after:content-[''];
+  }
 }
 
 * {
