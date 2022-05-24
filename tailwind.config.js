@@ -28,6 +28,7 @@ module.exports = {
       animation: {
         scale: 'scale 1.6s linear infinite',
         snowing: 'snowing 1s linear infinite',
+        snowman: 'snowman 4s linear infinite',
       },
       keyframes: {
         scale: {
@@ -39,6 +40,10 @@ module.exports = {
           '0%': { transform: 'translateY(0) scale(1) ' },
           '70%': { transform: 'translateY(300px) scale(1) translateX(-50px)' },
           '100%': { transform: 'translateY(300px) scale(0) translateX(-50px)' },
+        },
+        snowman: {
+          '70%': { transform: 'translateX(300px)' },
+          '100%': { transform: 'translateX(300px) translateY(20px) scale(0)' },
         },
       },
     },

@@ -9,7 +9,7 @@ export default function Menu() {
   const position = {
     home: ' translate-x-0',
     person: ' translate-x-[70px]',
-    chatbubble: ' translate-x-[140px]',
+    chatbubble: 'translate-x-[140px]',
     camera: ' translate-x-[210px]',
     settings: ' translate-x-[280px]',
   };
