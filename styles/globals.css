@@ -24,6 +24,12 @@
   .am_indicator_a {
     @apply after:absolute after:top-[5px] after:-right-[28px] after:h-[30px] after:w-[30px] after:rounded-full after:bg-transparent after:shadow-[-15px_18px_#fff] after:content-[''];
   }
+  .fm_b {
+    @apply before:h-[16px] before:w-[16px] before:-translate-x-[24px] before:rotate-45 before:border-t-4 before:border-r-4 before:border-[#30a3ff] before:content-[''];
+  }
+  .fm_a {
+    @apply after:h-[16px] after:w-[16px] after:translate-x-[24px] after:rotate-[225deg] after:border-t-4 after:border-r-4 after:border-[#30a3ff] after:content-[''];
+  }
 }
 
 * {

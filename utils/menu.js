@@ -29,6 +29,10 @@ export const menus = [
   },
   {
     path: '/animate_menu',
-    kor: '애니메이션 메뉴 ',
+    kor: '애니메이션 메뉴',
+  },
+  {
+    path: '/focus_menu',
+    kor: '포커스 메뉴',
   },
 ];

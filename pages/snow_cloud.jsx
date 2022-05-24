@@ -29,7 +29,7 @@ export default function Cloud() {
         </div>
       </div>
       <div className="relative top-[145px] h-[100px] w-[320px]">
-        <div className="absolute bottom-0 -left-[180px] h-[50px] w-[50px] animate-snowman rounded-full bg-[#fff] animation-delay-1000 before:absolute before:bottom-[44px] before:left-[8px] before:h-[32px] before:w-[32px] before:rounded-full before:bg-[#fff] before:content-['']" />
+        <div className="absolute bottom-0 -left-[180px] h-[50px] w-[50px] animate-snowman rounded-full bg-[#fff] before:absolute before:bottom-[44px] before:left-[8px] before:h-[32px] before:w-[32px] before:rounded-full before:bg-[#fff] before:content-['']" />
       </div>
     </div>
   );
