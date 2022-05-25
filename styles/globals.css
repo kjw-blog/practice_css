@@ -30,6 +30,9 @@
   .fm_a {
     @apply after:h-[16px] after:w-[16px] after:translate-x-[24px] after:rotate-[225deg] after:border-t-4 after:border-r-4 after:border-[#30a3ff] after:content-[''];
   }
+  .milk_loading {
+    @apply absolute left-0 h-[100px] w-[100px] origin-[150px] animate-milk rounded-full bg-[#fff];
+  }
 }
 
 * {
@@ -37,6 +40,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oswald', 'Jua', 'sans-serif';
+}
+.loader {
+  filter: url(#Gooey);
 }
 
 @font-face {

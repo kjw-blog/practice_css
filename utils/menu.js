@@ -35,4 +35,8 @@ export const menus = [
     path: '/focus_menu',
     kor: '포커스 메뉴',
   },
+  {
+    path: '/milk_animate',
+    kor: '우유 애니메이션',
+  },
 ];
