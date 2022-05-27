@@ -39,4 +39,8 @@ export const menus = [
     path: '/milk_animate',
     kor: '우유 애니메이션',
   },
+  {
+    path: '/animate/background',
+    kor: '애니메이션 배경',
+  },
 ];
