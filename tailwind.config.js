@@ -24,6 +24,7 @@ module.exports = {
         60: '1190ms',
         70: '1160ms',
         80: '1100ms',
+        custom: 'calc(125s / var(--i))',
       },
       animationDelay: {
         450: '450ms',
@@ -35,6 +36,7 @@ module.exports = {
         snowing: 'snowing 1s linear infinite',
         snowman: 'snowman 4s linear infinite',
         milk: 'milk 5s ease-in-out infinite',
+        animate: 'animate 15s linear infinite',
       },
       keyframes: {
         scale: {
@@ -67,6 +69,14 @@ module.exports = {
             width: '100px',
             height: '100px',
             transform: 'rotate(0deg) translateX(120px)',
+          },
+        },
+        animate: {
+          '0%': {
+            transform: 'translateY(100vh) scale(0)',
+          },
+          '100%': {
+            transform: 'translateY(-10vh) scale(1)',
           },
         },
       },
