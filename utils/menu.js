@@ -43,4 +43,8 @@ export const menus = [
     path: '/animate/background',
     kor: '애니메이션 배경',
   },
+  {
+    path: '/animate/product',
+    kor: '상품카드',
+  },
 ];

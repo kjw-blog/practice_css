@@ -4,6 +4,9 @@ module.exports = {
     './components/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    screens: {
+      lg: { max: '991px' },
+    },
     extend: {
       colors: {
         scroll: {
@@ -36,7 +39,7 @@ module.exports = {
         snowing: 'snowing 1s linear infinite',
         snowman: 'snowman 4s linear infinite',
         milk: 'milk 5s ease-in-out infinite',
-        animate: 'animate 15s linear infinite',
+        ascend: 'ascend 15s linear infinite',
       },
       keyframes: {
         scale: {
@@ -71,7 +74,7 @@ module.exports = {
             transform: 'rotate(0deg) translateX(120px)',
           },
         },
-        animate: {
+        ascend: {
           '0%': {
             transform: 'translateY(100vh) scale(0)',
           },
@@ -87,5 +90,6 @@ module.exports = {
     require('tailwind-scrollbar-hide'),
     require('tailwindcss-animation-delay'),
     require('tailwindcss-animation'),
+    require('tailwind-clip-path'),
   ],
 };

@@ -33,6 +33,9 @@
   .milk_loading {
     @apply absolute left-0 h-[100px] w-[100px] origin-[150px] animate-milk rounded-full bg-[#fff];
   }
+  .product_b {
+    @apply before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[color:var(--clr)] before:duration-500 before:content-[''] before:clip-path-circle-[120px_at_center] group-hover:before:clip-path-circle-[400px_at_center];
+  }
 }
 
 * {
